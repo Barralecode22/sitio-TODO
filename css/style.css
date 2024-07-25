@@ -1,0 +1,262 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+/* todo del cuerpo */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+section {
+    margin-top: 5rem;
+}
+/* barra de busqueda + logo + button de inicio sesión */
+
+.navBar {
+    background-color: #2C3673;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navLogo {
+    margin: 0 20px;
+}
+
+.navLogo img {
+    height: 40px;
+}
+
+.barraDeBusqueda {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.barraDeBusqueda input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.botonesNav {
+    display: flex;
+    gap: 10px;
+}
+
+.buttonIN, .buttonRE {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buttonIN {
+    background-color: #ffff;
+    color: #2C3673;
+}
+
+.buttonRE {
+    background-color: #f3a548;
+    color: #ffff;
+}
+
+
+/* menu de navegación */
+
+ul li a{
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+}
+
+nav ul li {
+    margin: 15px 50px;
+}
+
+nav {
+    background-color:#F8F9FF;
+}
+
+/* sección de publicidad inicial */
+
+.publicidadDeProductos {
+    width: 100%;
+}
+
+.publicidadDeProductos {
+    margin-top: 0;
+}
+
+/* Ofertas del dia */
+
+
+h1 {
+    text-align: center;
+}
+
+.sección {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.25rem;
+}
+
+.card {
+    padding: 3%;
+    display: flex;
+    background-color: #ffff;
+    box-shadow: 0px 1px 54px 10px rgba(0,0,0,0.10); 
+}
+
+.card div {
+    padding: 5%;
+}
+
+.oferta {
+    align-content: center;
+    padding: 20%;
+}
+
+/* Lo mas buscado */
+
+.espacioLoMasBuscado {
+    margin: 0 10% 0 10%;
+}
+
+.loMasBuscado ul {
+    background-color: #D9D9D9;
+    list-style: none;
+    display: flex;
+    padding: 1%;
+    margin-bottom: 0;
+}
+
+.NombresDeLoMasBuscado {
+    padding: 1%;
+
+}
+
+.primerProductoMasBuscado {
+    width: 100%;
+}
+
+/* Sección de novedades */
+
+.novedades {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+
+.cardNovedades {
+    padding: 5%;
+    background: #fff;
+    box-shadow: 0px 1px 54px 10px rgba(0,0,0,0.10);
+}
+
+/* footer*/
+
+footer {
+    margin-top: 5rem;
+}
+
+.footerMail {
+    text-align: center;
+    padding: 20px;
+    background-color: #F8F9FF;
+}
+
+.barraDeMail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 1%;
+}
+
+.tituloMail h3 {
+    margin: 0;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+.enviarMail {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+    width: 60%;
+    max-width: 500px;
+}
+
+.barraDeMail button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f3a548;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.barraDeMail button:hover {
+    background-color: #cf8c39;
+}
+
+.margenFooter {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.grid {
+    margin: auto;
+    width: 75%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(1,200px);
+}
+
+.datosFooter {
+    margin-top: 1.25rem;
+}
+
+.iconosRedes {
+    height: 20px;
+}
+
+.redesSociales {
+    display: flex;
+    margin-top: 1.25rem;
+    gap: 3px;
+}
+
+.nosotrosFooter {
+    margin-top: 1.25rem;
+}
+
+.compraOnline {
+    margin-top: 1.25rem;
+}
+
+.soporteFooter {
+    margin-top: 1.25rem;
+}
+
+.derechosReservados {
+    background-color: #F8F9FF;
+}
