@@ -6,13 +6,15 @@
     <title>TODO</title>
     <link rel="icon" href="./assets/icono del logo.svg">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+
 </head>
 <body>
     <header>
         <nav> <!-- barra para busqueda de productos + Logo + button para inicio de sesión y registra -->
             <div class="navBar">
                 <div class="navLogo">
-                    <img src="./assets/logo.svg" alt="LOGO">
+                    <img class="logo" src="./assets/logo.svg" alt="LOGO">
                 </div>
                 <div class="barraDeBusqueda">
                     <input placeholder="Buscar...">
@@ -23,27 +25,40 @@
                 </div>
             </div>
         </nav>
-        <nav>
-            <ul>
-                <li><a href="">inicio</a></li>
-
-                <li><a href="./pages/categorias.html">Categorias</a></li>
-
-                <li><a href="./pages/ofertas.html">Ofertas</a></li>
-
-                <li><a href="./pages/favoritos.html">Favoritos</a></li>
-                
-                <li><a href="./pages/carrito.html">Carrito</a></li>
-            </ul>
+        <nav class="segundoNav">
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="">inicio</a></li>
+        
+                    <li><a href="./pages/categorias.html">Categorias</a></li>
+        
+                    <li><a href="./pages/ofertas.html">Ofertas</a></li>
+        
+                    <li class="favoRitos"><a href="./pages/favoritos.html">Favoritos</a></li>
+                        
+                    <li class="carriTo"><a class="carriTo" href="./pages/carrito.html">Carrito</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
     <main>
-        <section class="publicidadDeProductos"> <!-- Publicidad del lugar -->
-            <article>
-                <div>
-                    <img src="../trabajo final/assets/sección de inicio.svg" alt="publicidad de productos" class="publicidadDeProductos"> 
+        <section class="sliderBox"> <!-- Publicidad del lugar -->
+            <div class="silderCarrusel">
+                <div class="carruSel">
+                    <img src="./assets/sección de inicio.png" alt="">
                 </div>
-            </article>
+                <div class="carruSel">
+                    <img src="./assets/sección de inicio 2.png" alt="">
+                </div>
+                <div class="carruSel">
+                    <img src="./assets/sección de inicio 3.png" alt="">
+                </div>
+                <div class="carruSel">
+                    <img src="./assets/sección de inicio 4.png" alt="">
+                </div>
+            </div>
         </section>
     </main>
 
@@ -56,8 +71,8 @@
             <div class="sección">
                 <div class="card">
                     <div>
-                        <h2>hola mundo</h2>
-                        <p>soy matias, vivo en cordoba argentina</p>
+                        <h2>Comida</h2>
+                        <p>¡20% de descuento en todos nuestros <br> platos de verano! Ven y prueba nuestros menús frescos. ¡Te esperamos!</p>
                     </div>
                     <div class="oferta">
                         <h2>20%</h2>
@@ -65,8 +80,8 @@
                 </div>
                 <div class="card">
                     <div>
-                        <h2>hola mundo</h2>
-                        <p>soy matias, vivo en cordoba argentina</p>
+                        <h2>Jugueteria</h2>
+                        <p>¡Hasta 50% de descuento en nuestra <br> colección de verano! Renueva tu estilo. ¡No te lo pierdas!</p>
                     </div>
                     <div class="oferta">
                         <h2>50%</h2>
@@ -76,8 +91,8 @@
             <div class="sección">
                 <div class="card">
                     <div>
-                        <h2>hola mundo</h2>
-                        <p>soy matias, vivo en cordoba argentina</p>
+                        <h2>Ropa</h2>
+                        <p>¡Compra 2 juguetes y lleva el 1ro gratis! <br> Despierta la imaginación de tus pequeños. ¡Aprovecha! </p>
                     </div>
                     <div class="oferta">
                         <h2>2x1</h2>
@@ -102,7 +117,7 @@
                     </ul>
                 </div>
                 <div>
-                    <img class="primerProductoMasBuscado"  src="../trabajo final/assets/foto del primer producto mas buscado.svg">
+                    <img class="primerProductoMasBuscado"  src="./assets/foto del primer producto mas buscado.png">
                 </div>
             </article>
         </section>
@@ -110,7 +125,7 @@
         <!-- Sección de novedades -->
         
         <section>
-            <div class="seccionNovedades">
+            <div>
                 <div>
                     <h1> Novedades </h1>
                 </div>
@@ -200,10 +215,8 @@
             </div>
         </div>
         <div class="derechosReservados">
-            <div>
-                <p>© TODO 2024. Todos los derechos reservados.</p>
-                <p>Direcciôn General de Defensa y protecciôn al Consumidor, para consultas y/o denuncias</p>
-            </div>
+            <p class="footerFin">© TODO 2024. Todos los derechos reservados.</p>
+            <p class="footerFin">Direcciôn General de Defensa y protecciôn al Consumidor, para consultas y/o denuncias</p>
         </div>
     </footer>
 </body>
