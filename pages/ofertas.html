@@ -6,13 +6,14 @@
     <title>TODO</title>
     <link rel="icon" href="../assets/icono del logo.svg">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
 </head>
 <body>
     <header>
         <nav> <!-- barra para busqueda de productos + Logo + button para inicio de sesión y registra -->
             <div class="navBar">
                 <div class="navLogo">
-                    <img src="../assets/logo.svg" alt="LOGO">
+                    <img class="logo" src="../assets/logo.svg" alt="LOGO">
                 </div>
                 <div class="barraDeBusqueda">
                     <input placeholder="Buscar...">
@@ -23,18 +24,22 @@
                 </div>
             </div>
         </nav>
-        <nav>
-            <ul>
-                <li><a href="../index.html">inicio</a></li>
-
-                <li><a href="../pages/categorias.html">Categorias</a></li>
-
-                <li><a href="">Ofertas</a></li>
-
-                <li><a href="../pages/favoritos.html">Favoritos</a></li>
-                
-                <li><a href="../pages/carrito.html">Carrito</a></li>
-            </ul>
+        <nav class="segundoNav">
+            <input type="checkbox" id="toggle">
+            <label for="toggle"><i class="material-icons">menu</i></label>
+            <div class="menu">
+                <ul>
+                    <li><a href="../index.html">inicio</a></li>
+        
+                    <li><a href="../pages/categorias.html">Categorias</a></li>
+        
+                    <li><a href="#" class="active">Ofertas</a></li>
+        
+                    <li class="favoRitos"><a href="../pages/favoritos.html">Favoritos</a></li>
+                        
+                    <li class="carriTo"><a class="carriTo" href="../pages/carrito.html">Carrito</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -137,62 +142,99 @@
                             <div class="tituloMail">
                                 <h3>Ingresa tu e-mail para más novedades</h3>
                             </div>
-                            <input class="enviarMail" type="email" placeholder="Ingresa tu e-mail">
-                            <button type="submit">Enviar</button>
+                            <div class="buttonsubmit">
+                                <input class="enviarMail" type="email" placeholder="Ingresa tu e-mail">
+                                <button type="submit">Enviar</button>
+                            </div>
                         </div>
                     </div>
                     <div class="margenFooter">
                         <div class="grid">
-                            <div class="datosFooter">
-                                <div>
+                            <div class="footerDesplegable">
+                                <input id="toggle1" class="moRe" type="checkbox">
+                                <label for="toggle1">
+                                    <div class="espacioDeItems">
+                                        <h2>Contacto</h2>
+                                        <h2>+</h2>
+                                    </div>
+                                </label>
+                                <div class="tituloNoResponsive">
                                     <h2>Contacto</h2>
                                 </div>
-                                    <div>
-                                        <div class="redesSociales">
-                                            <img class="iconosRedes" src="../assets/whatsapp.png">
-                                            <p>WHATSAPP</p>
-                                        </div>
-                                        <div class="redesSociales">
-                                            <img class="iconosRedes" src="../assets/instagram (1).png">
-                                            <p>INSTAGRAM</p>
-                                        </div>
-                                        <div class="redesSociales">
-                                            <img class="iconosRedes" src="../assets/facebook.png">
-                                            <p>FACEBOOK</p>
-                                        </div>
+                                <div class="datosFooter">
+                                    <div class="redesSociales">
+                                        <img class="iconosRedes" src="../assets/whatsapp.png">
+                                        <p>+3518957316</p>
                                     </div>
+                                    <div class="redesSociales">
+                                        <img class="iconosRedes" src="../assets/instagram (1).png">
+                                        <p>TODO.oficial</p>
+                                    </div>
+                                    <div class="redesSociales">
+                                        <img class="iconosRedes" src="../assets/facebook.png">
+                                        <p>TODO.oficial</p>
+                                    </div>
+                                </div>
                             </div>
-                            <div  class="datosFooter">
-                                <h2>Nosotros</h2>
-                                    <div>
-                                        <p class="nosotrosFooter">Nuestra empresa</p>
-                                        <p class="nosotrosFooter">Politicas de privacidad</p>
+                            <div class="footerDesplegable">
+                                <input id="toggle2" class="moRe" type="checkbox">
+                                <label for="toggle2">
+                                    <div class="espacioDeItems">
+                                        <h2>Nosotros</h2>
+                                        <h2>+</h2>
                                     </div>
+                                </label>
+                                <div class="tituloNoResponsive">
+                                    <h2>Nosotros</h2>
+                                </div>
+                                <div class="datosFooter">
+                                    <p class="nosotrosFooter">Nuestra empresa</p>
+                                    <p class="nosotrosFooter">Políticas de privacidad</p>
+                                </div>
                             </div>
-                            <div class="datosFooter">
-                                <h2>Comprá online</h2>
-                                    <div class="compraOnline">
-                                        <p class="compraOnline">¿Cómo comprar?</p>
-                                        <p class="compraOnline">Ventas mayoristas online</p>
-                                        <p class="compraOnline">Sucursarles</p>
-                                        <p class="compraOnline">¿Donde llega mi pedido?</p>
+                            <div class="footerDesplegable">
+                                <input id="toggle3" class="moRe" type="checkbox">
+                                <label for="toggle3">
+                                    <div class="espacioDeItems">
+                                        <h2>Online</h2>
+                                        <h2>+</h2>
                                     </div>
+                                </label>
+                                <div class="tituloNoResponsive">
+                                    <h2>Online</h2>
+                                </div>
+                                <div class="datosFooter">
+                                    <p class="compraOnline">¿Cómo comprar?</p>
+                                    <p class="compraOnline">Ventas mayoristas online</p>
+                                    <p class="compraOnline">Sucursales</p>
+                                    <p class="compraOnline">¿Dónde llega mi pedido?</p>
+                                </div>
                             </div>
-                            <div class="datosFooter">
-                                <h2>Soporte</h2>
-                                    <div >
-                                        <p class="soporteFooter">No puedo registrarme</p>
-                                        <p class="soporteFooter">No encuentro lo que busco</p>
-                                        <p class="soporteFooter">Reclamos</p>
-                                        <p class="soporteFooter">Compra fallida</p>
+                            <div class="footerDesplegable">
+                                <input id="toggle4" class="moRe" type="checkbox">
+                                <label for="toggle4">
+                                    
+                                    <div class="espacioDeItems">
+                                        <h2>Soporte</h2>
+                                        <h2>+</h2>
                                     </div>
+                                </label>
+                                <div class="tituloNoResponsive">
+                                    <h2>Soporte</h2>
+                                </div>
+                                <div class="datosFooter">
+                                    <p class="soporteFooter">No puedo registrarme</p>
+                                    <p class="soporteFooter">No encuentro lo que busco</p>
+                                    <p class="soporteFooter">Reclamos</p>
+                                    <p class="soporteFooter">Compra fallida</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="derechosReservados">
                     <p class="footerFin">© TODO 2024. Todos los derechos reservados.</p>
-                    <p class="footerFin">Direcciôn General de Defensa y protecciôn al Consumidor, para consultas y/o denuncias</p>
+                    <p class="footerFin">Dirección General de Defensa y Protección al Consumidor, para consultas y/o denuncias</p>
                 </div>
             </footer>
     </body>

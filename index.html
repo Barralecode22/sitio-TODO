@@ -7,7 +7,8 @@
     <link rel="icon" href="./assets/icono del logo.svg">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-
+</head>
+<body>
 </head>
 <body>
     <header>
@@ -30,7 +31,7 @@
             <label for="toggle"><i class="material-icons">menu</i></label>
             <div class="menu">
                 <ul>
-                    <li><a href="">inicio</a></li>
+                    <li><a href="#" class="active">inicio</a></li>
         
                     <li><a href="./pages/categorias.html">Categorias</a></li>
         
@@ -43,8 +44,11 @@
             </div>
         </nav>
     </header>
+
+<!-- Publicidad del lugar -->
+
     <main>
-        <section class="sliderBox"> <!-- Publicidad del lugar -->
+        <section class="sliderBox">
             <div class="silderCarrusel">
                 <div class="carruSel">
                     <img src="./assets/sección de inicio.png" alt="">
@@ -68,7 +72,7 @@
             <div>
                 <h1>Ofertas del día</h1>
             </div>
-            <div class="sección">
+            <div class="sección2">
                 <div class="card">
                     <div>
                         <h2>Comida</h2>
@@ -88,7 +92,7 @@
                     </div>
                 </div>
             </div>
-            <div class="sección">
+            <div class="sección2">
                 <div class="card">
                     <div>
                         <h2>Ropa</h2>
@@ -107,117 +111,187 @@
             <div>
                 <h1> Lo más Buscado</h1>
             </div>
-            <article class="espacioLoMasBuscado">
-                <div class="loMasBuscado">
-                    <ul>
-                        <li class="NombresDeLoMasBuscado"><a  href=""></a>Comida</li>
-                        <li class="NombresDeLoMasBuscado"><a  href=""></a>Muebles</li>
-                        <li class="NombresDeLoMasBuscado"><a href=""></a>Tecnologia</li>
-                        <li class="NombresDeLoMasBuscado"><a href=""></a>Ropa</li>
-                    </ul>
+            <section class="sliderBox2">
+                <div class="silderCarrusel">
+                    <div class="carruSel">
+                        <h2 class="tituloLoMasBuscado">Comida</h2>
+                        <img src="./assets/lo mas buscado-comida-img.png" alt="">
+                    </div>
+                    <div class="carruSel">
+                        <h2 class="tituloLoMasBuscado">Muebles</h2>
+                        <img src="./assets/lo mas buscado-muebles-img.png" alt="">
+                    </div>
+                    <div class="carruSel">
+                        <h2 class="tituloLoMasBuscado">Tecnologia</h2>
+                        <img src="./assets/lo mas buscado-tecnologia-img.png" alt="">
+                    </div>
+                    <div class="carruSel">
+                        <h2 class="tituloLoMasBuscado">Ropa</h2>
+                        <img src="./assets/lo mas buscado-ropa-img.png" alt="">
+                    </div>
                 </div>
-                <div>
-                    <img class="primerProductoMasBuscado"  src="./assets/foto del primer producto mas buscado.png">
-                </div>
-            </article>
+            </section>
         </section>
 
         <!-- Sección de novedades -->
         
         <section>
-            <div>
-                <div>
-                    <h1> Novedades </h1>
+            <div class="titulonovedades text-center mb-4">
+                    <h1>Novedades</h1>
                 </div>
-                <article class="novedades">
-                    <div class="cardNovedades">
-                        <h2> Nueva línea de smoothies tropicales </h2>
-                        <p> Descubre nuestros nuevos smoothies de mango, piña <br> y coco, perfectos para refrescarte este verano. ¡Sabor <br> tropical en cada sorbo! </p>
+            <div class="secciónnovedades container">
+                <div class="row">
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card text-bg-dark">
+                            <img src="./assets/novedad-1-img.png" class="card-img img-fluid" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Nueva línea de smoothies tropicales</h5>
+                                <p class="card-text">Descubre nuestros nuevos smoothies de mango, piña y coco, perfectos para refrescarte este verano. ¡Sabor tropical en cada sorbo!</p>
+                                <p class="card-text"><small>Ultima actualización hace 5 días</small></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardNovedades">
-                        <h2> Nueva línea de smoothies tropicales </h2>
-                        <p> Descubre nuestros nuevos smoothies de mango, piña <br> y coco, perfectos para refrescarte este verano. ¡Sabor <br> tropical en cada sorbo! </p>
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card text-bg-dark">
+                            <img src="./assets/novedad-2-img.png" class="card-img img-fluid" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Menú vegano gourmet</h5>
+                                <p class="card-text">Hemos lanzado un menú vegano gourmet con platos exquisitos y saludables, desde ensaladas frescas hasta postres irresistibles. ¡Ven a probarlo!</p>
+                                <p class="card-text"><small>Ultima actualización hace 5 días</small></p>
+                            </div>
+                        </div>
                     </div>
-                </article>
-                <article class="novedades">
-                    <div class="cardNovedades">
-                        <h2> Nueva línea de smoothies tropicales </h2>
-                        <p> Descubre nuestros nuevos smoothies de mango, piña <br> y coco, perfectos para refrescarte este verano. ¡Sabor <br> tropical en cada sorbo! </p>
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card text-bg-dark">
+                            <img src="./assets/novedad-3-img.png" class="card-img img-fluid" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Lanzamiento del nuevo smartphone X200</h5>
+                                <p class="card-text">Presentamos el smartphone X200, con cámara de alta resolución, batería de larga duración y un diseño elegante. ¡Sé el primero en tenerlo!</p>
+                                <p class="card-text"><small>Ultima actualización hace 5 días</small></p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="cardNovedades">
-                        <h2> Nueva línea de smoothies tropicales </h2>
-                        <p> Descubre nuestros nuevos smoothies de mango, piña <br> y coco, perfectos para refrescarte este verano. ¡Sabor <br> tropical en cada sorbo! </p>
+                    <div class="col-12 col-md-6 mb-4">
+                        <div class="card text-bg-dark">
+                            <img src="./assets/novedad-4-img.png" class="card-img img-fluid" alt="...">
+                            <div class="card-img-overlay">
+                                <h5 class="card-title">Colección de verano ecológica</h5>
+                                <p class="card-text">Explora nuestra nueva colección de verano hecha con materiales ecológicos y sostenibles. Moda con estilo y compromiso ambiental. ¡Vístete con conciencia!</p>
+                                <p class="card-text"><small>Ultima actualización hace 5 días</small></p>
+                            </div>
+                        </div>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
 
         <!-- footer -->
 
-    <footer>
-        <div>
-            <div class="footerMail">
-                <div class="barraDeMail">
-                    <div class="tituloMail">
-                        <h3>Ingresa tu e-mail para más novedades</h3>
-                    </div>
-                    <input class="enviarMail" type="email" placeholder="Ingresa tu e-mail">
-                    <button type="submit">Enviar</button>
-                </div>
-            </div>
-            <div class="margenFooter">
-                <div class="grid">
-                    <div class="datosFooter">
-                        <div>
-                            <h2>Contacto</h2>
+        <footer>
+            <div>
+                <div class="footerMail">
+                    <div class="barraDeMail">
+                        <div class="tituloMail">
+                            <h3>Ingresa tu e-mail para más novedades</h3>
                         </div>
-                            <div>
+                        <div class="buttonsubmit">
+                            <input class="enviarMail" type="email" placeholder="Ingresa tu e-mail">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="margenFooter">
+                    <div class="grid">
+                        <div class="footerDesplegable">
+                            <input id="toggle1" class="moRe" type="checkbox">
+                            <label for="toggle1">
+                                <div class="espacioDeItems">
+                                    <h2>Contacto</h2>
+                                    <h2>+</h2>
+                                </div>
+                            </label>
+                            <div class="tituloNoResponsive">
+                                <h2>Contacto</h2>
+                            </div>
+                            <div class="datosFooter">
                                 <div class="redesSociales">
-                                    <img class="iconosRedes" src="../trabajo final/assets/whatsapp.png">
-                                    <p>WHATSAPP</p>
+                                    <img class="iconosRedes" src="./assets/whatsapp.png">
+                                    <p>+3518957316</p>
                                 </div>
                                 <div class="redesSociales">
-                                    <img class="iconosRedes" src="../trabajo final/assets/instagram (1).png">
-                                    <p>INSTAGRAM</p>
+                                    <img class="iconosRedes" src="./assets/instagram (1).png">
+                                    <p>TODO.oficial</p>
                                 </div>
                                 <div class="redesSociales">
-                                    <img class="iconosRedes" src="../trabajo final/assets/facebook.png">
-                                    <p>FACEBOOK</p>
+                                    <img class="iconosRedes" src="./assets/facebook.png">
+                                    <p>TODO.oficial</p>
                                 </div>
                             </div>
-                    </div>
-                    <div  class="datosFooter">
-                        <h2>Nosotros</h2>
-                            <div>
+                        </div>
+                        <div class="footerDesplegable">
+                            <input id="toggle2" class="moRe" type="checkbox">
+                            <label for="toggle2">
+                                <div class="espacioDeItems">
+                                    <h2>Nosotros</h2>
+                                    <h2>+</h2>
+                                </div>
+                            </label>
+                            <div class="tituloNoResponsive">
+                                <h2>Nosotros</h2>
+                            </div>
+                            <div class="datosFooter">
                                 <p class="nosotrosFooter">Nuestra empresa</p>
-                                <p class="nosotrosFooter">Politicas de privacidad</p>
+                                <p class="nosotrosFooter">Políticas de privacidad</p>
                             </div>
-                    </div>
-                    <div class="datosFooter">
-                        <h2>Comprá online</h2>
-                            <div class="compraOnline">
+                        </div>
+                        <div class="footerDesplegable">
+                            <input id="toggle3" class="moRe" type="checkbox">
+                            <label for="toggle3">
+                                <div class="espacioDeItems">
+                                    <h2>Online</h2>
+                                    <h2>+</h2>
+                                </div>
+                            </label>
+                            <div class="tituloNoResponsive">
+                                <h2>Online</h2>
+                            </div>
+                            <div class="datosFooter">
                                 <p class="compraOnline">¿Cómo comprar?</p>
                                 <p class="compraOnline">Ventas mayoristas online</p>
-                                <p class="compraOnline">Sucursarles</p>
-                                <p class="compraOnline">¿Donde llega mi pedido?</p>
+                                <p class="compraOnline">Sucursales</p>
+                                <p class="compraOnline">¿Dónde llega mi pedido?</p>
                             </div>
-                    </div>
-                    <div class="datosFooter">
-                        <h2>Soporte</h2>
-                            <div >
+                        </div>
+                        <div class="footerDesplegable">
+                            <input id="toggle4" class="moRe" type="checkbox">
+                            <label for="toggle4">
+                                
+                                <div class="espacioDeItems">
+                                    <h2>Soporte</h2>
+                                    <h2>+</h2>
+                                </div>
+                            </label>
+                            <div class="tituloNoResponsive">
+                                <h2>Soporte</h2>
+                            </div>
+                            <div class="datosFooter">
                                 <p class="soporteFooter">No puedo registrarme</p>
                                 <p class="soporteFooter">No encuentro lo que busco</p>
                                 <p class="soporteFooter">Reclamos</p>
                                 <p class="soporteFooter">Compra fallida</p>
                             </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="derechosReservados">
-            <p class="footerFin">© TODO 2024. Todos los derechos reservados.</p>
-            <p class="footerFin">Direcciôn General de Defensa y protecciôn al Consumidor, para consultas y/o denuncias</p>
-        </div>
-    </footer>
+            <div class="derechosReservados">
+                <p class="footerFin">© TODO 2024. Todos los derechos reservados.</p>
+                <p class="footerFin">Dirección General de Defensa y Protección al Consumidor, para consultas y/o denuncias</p>
+            </div>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>

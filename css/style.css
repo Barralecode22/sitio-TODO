@@ -72,88 +72,22 @@ label {
     display: none;
 }
 
+/* menu de navegación */
 
-@media (max-width:768px){
-
-    nav ul li {
-        margin: 3% 5%;
-        background-color: #F8F9FF;
-    }
-
-    .menu {
-        width: 100%;
-        height: 0;
-        overflow: hidden;
-        transition: height 0.3s ease;
-    }
-
-    li a {
-        color: #cf8c39;
-    }
-
-    .navBar {
-        padding: 10px 50px;
-        align-items: center;
-    }
-
-    .navLogo {
-        margin: 0;
-    }
-
-    .logo {
-        width: 100px;
-    }
-
-    .botonesNav {
-        display: none;
-    }
-
-    ul {
-        flex-direction: column;
-    }
-
-    .carriTo {
-        display: none;
-    }
-
-    .favoRitos {
-        display: none;
-    }
-
-    label {
-        padding: 2% 6%;
-        display: inline-flex;
-        color:#2C3673;
-    }
-
-    nav #toggle:checked ~ .menu {
-        height: auto;
-        display: block;
-    }
-
-    h1 {
-        font-size: 20px;
-    }
-
-    .sección {
-        flex-direction: column;
-        margin: 0 10%;
-    }
-
-    .novedades {
-        flex-direction: column;
-        margin: 0 10%;
-    }
-
-    .cardNovedades {
-        margin-top: ;
-        margin: 0;
-    }
+ul li a.active {
+    color: #181818;
 }
 
-/* menu de navegación */
-ul li a {
+
+ul li a:hover {
     text-decoration: none;
+    color:#f3a548;
+}
+
+ul li a {
+    color: #9e9e9e;
+    text-decoration: none;
+    font-weight:500;
 }
 
 nav ul {
@@ -212,14 +146,14 @@ nav {
     75% {margin-left: -300%;}
     100% {margin-left: -300%;}
 }
-/* Ofertas del dia */
 
+/* Ofertas del dia */
 
 h1 {
     text-align: center;
 }
 
-.sección {
+.sección2 {
     margin-top: 1.25rem;
     display: flex;
     justify-content: center;
@@ -244,40 +178,48 @@ h1 {
 
 /* Lo mas buscado */
 
-.espacioLoMasBuscado {
-    margin: 2% 10% 0 10%;
+.sliderBox2 {
+    margin: 3% 10%;
+    width: 80%;
+    height: auto;
+    overflow: hidden;
 }
 
-.loMasBuscado ul {
-    background-color: #D9D9D9;
-    list-style: none;
+.sliderBox2 .silderCarrusel {
     display: flex;
-    padding: 1%;
-    margin-bottom: 0;
+    padding: 0;
+    width: 400%;
+    animation: slide 20s infinite alternate ease-in-out;
 }
 
-.NombresDeLoMasBuscado {
-    padding: 1%;
-
-}
-
-.primerProductoMasBuscado {
+.sliderBox2 .carruSel {
     width: 100%;
+    position: relative;
+}
+
+.sliderBox2 img {
+    width: 100%;
+}
+
+
+.tituloLoMasBuscado{
+    text-align: center;
+    color: #fff;
+    background-color: #2C3673;
+    padding: 2%;
+    margin: 0;
 }
 
 /* Sección de novedades */
 
-.novedades {
-    margin-top: 1.25rem;
-    display: flex;
-    justify-content: center;
-    gap: 2%;
+.secciónnovedades{
+    margin: 0 10%;
 }
 
 .cardNovedades {
-    padding: 5%;
-    background: #fff;
-    box-shadow: 0px 1px 54px 10px rgba(0,0,0,0.10);
+    gap: 2%;
+    margin-bottom: 2%;
+    display: flex;
 }
 
 /* PAGINA CATEGORIAS*/
@@ -296,7 +238,6 @@ h1 {
     margin: 2%;
     padding: 2%;
     border-radius: 3%;
-    gap: 5%;
     box-shadow: 0px 8px 30px 5px rgba(0,0,0,0.10);
 }
 
@@ -580,6 +521,7 @@ footer {
 }
 
 .grid {
+    gap: 5%;
     margin: auto;
     width: 75%;
     display: grid;
@@ -589,10 +531,10 @@ footer {
 
 .datosFooter {
     margin-top: 1.25rem;
-    margin-left: 1.25rem;
 }
 
 .iconosRedes {
+    margin-right: 5%;
     height: 20px;
 }
 
@@ -614,12 +556,191 @@ footer {
     margin-top: 1.25rem;
 }
 
+.footerDesplegable .datosFooter {
+    display: block;
+}
+
 .derechosReservados {
+    margin-top: 5%;
     padding: 1%;
+    text-align: center;
     background-color: #F8F9FF;
 }
 
 .footerFin {
     font-size: 1rem;
-    text-align: center;
+}
+
+.moRe {
+    display: none;
+}
+
+@media (max-width:768px){
+
+    nav ul li {
+        margin: 3% 5%;
+        background-color: #F8F9FF;
+    }
+
+    .menu {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    li a {
+        color: #cf8c39;
+    }
+
+    .navBar {
+        padding: 10px 50px;
+        align-items: center;
+    }
+
+    .navLogo {
+        margin: 0;
+    }
+
+    .logo {
+        width: 100px;
+    }
+
+    .botonesNav {
+        display: none;
+    }
+
+    ul {
+        flex-direction: column;
+    }
+
+    .carriTo {
+        display: none;
+    }
+
+    .favoRitos {
+        display: none;
+    }
+
+    label {
+        margin: 2% 6%;
+        display: inline-flex;
+        color:#2C3673;
+    }
+
+    nav #toggle:checked ~ .menu {
+        height: auto;
+        display: block;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .sección2 {
+        gap: 0;
+        flex-direction: column;
+        margin: 0 12%;
+    }
+
+    .card {
+        margin: 5% 0;
+    }
+
+    .tituloLoMasBuscado{
+        font-size: 16px;
+    }
+
+    /* Sección novedades */
+    
+    .cardNovedades {
+        flex-direction: column;
+    }
+
+
+    /* Footer responsive */
+
+    .barraDeMail{
+        flex-direction: column;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 1rem;
+    }
+
+    .footerDesplegable {
+        display: block;
+    }
+
+    .footerDesplegable h2 {
+        cursor: pointer;
+        margin: 0;
+    }
+
+    .datosFooter {
+        margin: 0 10%;
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        transition: height 0.3s ease;
+    }
+
+    
+    .moRe:checked ~ .datosFooter {
+        height: auto;
+        overflow: visible;
+    }
+
+    .tituloNoResponsive{
+        display: none;
+    }
+
+    .espacioDeItems {
+        border-radius: 5px;
+        gap: 280%;
+        display: flex;
+        padding: 15% 300% 15% 15%;
+        background-color: #F8F9FF;
+        color: #2C3673;
+    }
+
+    .paginaCategoria {
+        flex-direction: column;
+        margin: 0 20%;
+    }
+
+    .cardCategorias {
+        margin: 5%;
+    }
+
+    .cardCategorias img{
+        height: 150px;;
+    }
+
+    .cardCategorias button {
+        padding: 5% 20%;
+    }
+
+    .cardCategorias p {
+        margin-top: 5%;
+        font-size: 14px;
+    }
+
+    .precioCard {
+        font-size: 20px;
+    }
+
+    .infoProducto {
+        margin-left: 10%;
+    }
+
+    .buttonVerMas {
+        padding: 2px 200px;
+    }
+
+    .margEn {
+        margin-top: 5%;
+    }
 }
