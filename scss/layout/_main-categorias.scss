@@ -13,6 +13,11 @@ section{
             border-radius: 3%;
             box-shadow: 0px 8px 30px 5px rgba(0,0,0,0.10);
 
+            &:hover{
+                transform: scale(1.2);
+            }
+
+
             div{
 
             }
@@ -42,6 +47,10 @@ section{
             border: none;
             color: #ffff;
             background-color: #2C3673;
+            
+            &:hover{
+                background-color: map-get($colores,color1);
+            }
         }
     }
 }

@@ -1,5 +1,31 @@
 @media (max-width: 450px) {
-    
+
+    /* main responsive (450px) */
+
+.margEn{
+    div{
+        h1{
+
+        }
+    }
+    .paginaCategoria{
+        margin: 0;
+
+        .cardCategorias{
+            flex-direction: column;
+            div{
+                .tamañoDeProducto{
+                }
+            }
+            .infoProducto{
+
+            }
+        }
+    }
+}
+
+/* footer responsive (450px) */
+
 footer {
     .footerMail {
         .barraDeMail {
@@ -53,11 +79,9 @@ footer {
             }
             }
 
-            .espacioDeItems,
-            .espacioDeItems2,
             .espacioDeItems3 {
-              gap: 10%; // Ajustar los gaps según sea necesario
-            padding: 10px;
+                gap: 10%;
+                padding: 10px;
             }
 
             .tituloNoResponsive {

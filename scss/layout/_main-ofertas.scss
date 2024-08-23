@@ -16,6 +16,10 @@ section{
             margin-left: 1%;
             margin-right: 1%;
 
+            &:hover{
+                transform: scale(1.2);
+            }
+
             p{
                 margin-bottom: 10%;
                 font-size: 1rem;
@@ -29,6 +33,10 @@ section{
             .buttonComprar{
                 @include boton;
                 padding: 8% 30%;
+
+                &:hover{
+                    background-color: map-get($colores,color1);
+                }
             }
         }
     }

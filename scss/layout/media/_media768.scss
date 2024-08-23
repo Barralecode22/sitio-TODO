@@ -1,4 +1,7 @@
 @media (max-width:768px){
+
+    /* responsive header (768px) */
+
     header{
         nav{
             .navBar{
@@ -25,6 +28,8 @@
             }
         }
 
+         /* responsive segundo nav (768px) */
+
         .segundoNav{
 
             #toggle:checked ~ .menu{
@@ -33,19 +38,15 @@
             }
             label{
                 margin: 2% 6%;
+                margin-right: 66%;
                 display: inline-flex;
                 color:map-get($colores,color2);
             }
-
-            .mateRial1 {
-                padding: 0;
-                margin-left: 50%;
-                margin-right: 4%; // Ajusta este margen según sea necesario para 760px
-            }
-
-            .mateRial {
-                margin-left: auto;
-                margin: 0;
+            
+            img{
+                margin-bottom: 1%;
+                margin-left: 5%;
+                width: 3%;
             }
             
             .menu{
@@ -84,7 +85,7 @@
             margin: 3% 5% 0 5%;
 
             .cardComida{
-                
+
             }
         }
     }
@@ -137,7 +138,40 @@
 
     /* PAGINA OFERTAS */
 
-    
+    section{
+        div{
+
+        }
+
+        .container{
+            flex-direction: column;
+            margin: 0 20%;
+
+            .prodUctos{
+                margin-bottom: 5%;
+                padding: 1%;
+                text-align: center;
+
+                img{
+                    margin-top: 5%;
+                }
+
+                p{
+                    margin-bottom: 5%;
+                    padding: 0;
+                }
+
+                h2{
+                    
+                }
+
+                .buttonComprar{
+                    padding: 5% 10%;
+                    margin-bottom: 5%;
+                }
+            }
+        }
+    }
 
     /* PAGINA FAVORITOS */
 
