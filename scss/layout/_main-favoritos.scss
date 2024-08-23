@@ -1,0 +1,37 @@
+section{
+    margin-top: 3%;
+
+    .CardProducto{
+        margin-bottom: 2%;
+
+        .cardFavoritos{
+            border-radius: 10px;
+            margin: 0 33%;
+            box-shadow: 0px 8px 30px 5px rgba(0,0,0,0.10);
+            padding: 1%;
+            display: flex;
+            gap: 30px;
+
+            div{
+                .tituloProducto{
+                    font-weight:600;
+                    margin-top: 5%;
+                    font-size: 16px;
+                    margin-bottom: 18%;
+                }
+            }
+            div{
+                .precioDeProducto{
+                    font-weight: bold;
+                    font-size: .875rem;
+                    margin-top: 20%;
+                    margin-bottom: 50%;
+                }
+                .buttonDeAgregar{
+                    @include boton;
+                    padding: 15% 30%;
+                }
+            }
+        }
+    }
+}

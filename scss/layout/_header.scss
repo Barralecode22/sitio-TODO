@@ -1,0 +1,93 @@
+.navBar {
+    background-color: map-get($colores,color2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    
+    div {
+        img {
+            margin: 0 20px;
+            height: 40px;
+        }
+    }
+    
+    .barraDeBusqueda {
+        flex-grow: 1;
+        margin: 0 1.25rem;
+        
+        .mateRial {
+            margin-left: auto;
+            margin-right: 2%; 
+        }
+
+        input {
+            width: 100%;
+            padding: .625rem;
+            font-size: 1rem;
+            border-radius: .3125rem;
+        }
+    }
+
+    .botonesNav {
+        display: flex;
+        gap: .625rem;
+
+        .buttonIN {
+            padding: .625rem 1.25rem;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+            background-color: map-get($colores,color3);
+            color: map-get($colores,color2);
+        }
+        
+        .buttonRE {
+            background-color: map-get($colores,color1);
+            color: map-get($colores,color3);
+            @extend .buttonIN;
+        }
+    }
+}
+
+.acTive {
+    @include active;
+}
+
+nav {
+    background-color: map-get($colores,color4);
+
+    label {
+        display: none;
+        cursor: pointer;
+    }
+
+    #toggle{
+        display: none;
+    }
+
+    ul {
+        list-style: none;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        font-family: "Inter", sans-serif;
+        font-size: 16px;
+
+        li {
+            margin: .9375rem 3.125rem;
+            text-decoration: none;
+
+            a {
+                color: map-get($colores,color5);
+                text-decoration: none;
+
+                &:hover {
+                    color:map-get($colores,color1);
+                }
+            }
+        }
+    }
+}

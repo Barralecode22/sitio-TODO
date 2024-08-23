@@ -1,0 +1,109 @@
+footer {
+    margin-top: 5rem;
+
+    .footerMail {
+        text-align: center;
+        padding: 1.25rem;
+        background-color: map-get($colores,color4);
+
+        .barraDeMail {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            gap: 1%;
+            
+            h3{
+                margin: 0;
+                font-size: 1rem;
+                white-space: nowrap;
+            }
+
+            .enviarMail {
+                padding: .625rem;
+                font-size: 1rem;
+                border: .0625rem solid #ccc;
+                border-radius: .3125rem 0 0 .3125rem;
+                width: 60%;
+                max-width: 31.25rem;
+            }
+
+            button {
+                padding: .625rem 1.25rem;
+                font-size: 1rem;
+                color: #fff;
+                background-color: map-get($colores,color2);
+                border: none;
+                border-radius: 0 .3125rem .3125rem 0;
+                cursor: pointer;
+
+                &:hover {
+                    background-color: map-get($colores,color1);
+                }
+            }
+        }
+        
+    }
+
+    .margenFooter {
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        .grid {
+            gap: 5%;
+            margin: auto;
+            width: 75%;
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-template-rows: repeat(1,200px);
+
+            .footerDesplegable{
+                display: block;
+
+                .moRe {
+                    display: none;
+                }
+                
+                label {
+                    display: none;
+                }
+    
+                .datosFooter{
+                    margin-top: 1.25rem;
+    
+                    .nosotrosFooter {
+                        margin-top: 1.25rem;
+                    }
+                    
+                    .compraOnline {
+                        margin-top: 1.25rem;
+                    }
+                    
+                    .soporteFooter {
+                        margin-top: 1.25rem;
+                    }
+    
+                    .redesSociales{
+                        display: flex;
+                        margin-top: 1.25rem;
+                        gap: 3px;
+    
+                        .iconosRedes{
+                            margin-right: 5%;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .derechosReservados{
+        margin-top: 5%;
+        padding: 1%;
+        text-align: center;
+        background-color: #F8F9FF;
+        .footerFin{
+            font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.secciónnovedades {
+    .card {
+        position: relative;
+
+        .card-img-overlay {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 20px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+
+            .card-title, .card-text {
+                margin: 0;
+                padding: 0;
+            }
+
+            .card-title {
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+
+            .card-text {
+                font-size: 1rem;
+            }
+
+            small {
+                font-size: 0.875rem;
+                opacity: 0.8;
+            }
+        }
+    }
+}

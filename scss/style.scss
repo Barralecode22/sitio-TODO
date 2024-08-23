@@ -1,0 +1,21 @@
+@import "./utilities/funciones";
+@import "./utilities/maps";
+@import "./utilities/mixin";
+@import "./utilities/variables";
+
+@import "./base/reset";
+@import "./base/fuentes";
+
+@import "./layout/footer";
+@import "./layout/header";
+@import "./layout/main-index";
+@import "./layout/main-categorias";
+@import "./layout/main-ofertas";
+@import "./layout/main-favoritos";
+@import "./layout/main-carrito";
+
+@import "./components/boostrap";
+@import "./components/card";
+
+@import "./layout/media/media450";
+@import "./layout/media/media768";

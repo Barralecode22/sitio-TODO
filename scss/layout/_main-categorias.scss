@@ -1,0 +1,47 @@
+section{
+    div{
+
+    }
+    .paginaCategoria{
+        display: flex;
+        justify-content: center;
+
+        .cardCategorias{
+            display: flex;
+            margin: 2%;
+            padding: 2%;
+            border-radius: 3%;
+            box-shadow: 0px 8px 30px 5px rgba(0,0,0,0.10);
+
+            div{
+
+            }
+            div{
+
+                .precioCard{
+                    margin-top: 10%;
+                }
+
+                .buttonDeAbajo{
+                    text-align: center;
+                }
+                
+                .buttonAgregar{
+                    @include boton;
+                }
+            }
+        }
+    }
+
+    .buttonDeAbajo{
+        text-align: center;
+        .buttonVerMas{
+            font-size: 40px;
+            padding: .1875rem 3.125rem;
+            border-radius: 5px;
+            border: none;
+            color: #ffff;
+            background-color: #2C3673;
+        }
+    }
+}

@@ -1,0 +1,251 @@
+@media (max-width:768px){
+    header{
+        nav{
+            .navBar{
+                padding: 10px 50px;
+                align-items: center;
+
+                .navLogo{
+                    margin: 0;
+
+                    img{
+                        width: 6.25rem;
+                    }
+                }
+
+                .barraDeBusqueda{
+                    input{
+
+                    }
+                }
+
+                .botonesNav{
+                    display: none;
+                }
+            }
+        }
+
+        .segundoNav{
+
+            #toggle:checked ~ .menu{
+                height: auto;
+                display: block;
+            }
+            label{
+                margin: 2% 6%;
+                display: inline-flex;
+                color:map-get($colores,color2);
+            }
+
+            .mateRial1 {
+                padding: 0;
+                margin-left: 50%;
+                margin-right: 4%; // Ajusta este margen según sea necesario para 760px
+            }
+
+            .mateRial {
+                margin-left: auto;
+                margin: 0;
+            }
+            
+            .menu{
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+                transition: height 0.3s ease;
+
+                ul{
+                    flex-direction: column;
+
+                    li{
+                        margin: 3% 5%;;
+                        
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .favoRitos{
+        display: none;
+    }
+    .carriTo{
+        display: none;
+    }
+
+    /* PAGINA INICIO */
+
+    section{
+        margin-bottom: 4%;
+
+        .sección2{
+            flex-direction: column;
+            margin: 3% 5% 0 5%;
+
+            .cardComida{
+                
+            }
+        }
+    }
+
+    /*novedades hecho con boostrap*/
+
+    /* PAGINA CATEGORIAS */
+
+    .margEn{
+        margin-top: 5%;
+
+        .paginaCategoria{
+            flex-direction: column;
+            margin: 0 20%;
+
+            .cardCategorias{
+                padding: 5% 10%;
+                margin: 5%;
+
+                div{
+                    img{
+                        height: 9.375rem;
+                    }
+                }
+                .infoProducto{
+                    margin-left: 10%;
+
+                    p{
+                        margin-top: 5%;
+                        font-size: 14px;
+                    }
+                    .precioCard{
+                        font-size: 20px;
+                    }
+                    .buttonAgregar{
+                        padding: 5% 20%;
+                    }
+                }
+                }
+        }
+
+        .buttonDeAbajo {
+            text-align: center;
+            .buttonVerMas{
+                padding: 2px 200px;
+            }
+        }
+    }
+    
+
+    /* PAGINA OFERTAS */
+
+    /* PAGINA FAVORITOS */
+
+    /* PAGINA CARRITO */
+
+    footer {
+
+        div{
+
+            .footerMail{
+                .barraDeMail{
+                    flex-direction: column;
+                    align-items: stretch;
+                    h3{
+                        font-size: 0.875rem;
+                        margin-bottom: 0.5rem;
+                    }
+                }
+                div{
+                    .enviarMail{
+                        width: 100%;
+                        font-size: 0.875rem;
+                        border-radius: 0.3125rem 0.3125rem 0 0;
+                        margin-bottom: 0.5rem;
+                    }
+                    button{
+                        width: 60%;
+                        border-radius: 0 0 0.3125rem 0.3125rem;
+                        font-size: 0.875rem;
+                    }
+                }
+            }
+    
+            .margenFooter{
+    
+                .grid{
+                    grid-template-columns: repeat(1,1fr);
+                    grid-template-rows: repeat(1,1fr);
+    
+                    .footerDesplegable{
+                        display: block;
+
+                        label{
+                            margin: 2% 0%;
+                            display: inline-flex;
+                            color:#2C3673;
+
+                            .espacioDeItems{
+                                border-radius: 5px;
+                                gap: 280%;
+                                display: flex;
+                                padding: 15% 292% 15% 15%;
+                                background-color: #F8F9FF;
+                                color: #2C3673;
+
+                                h2{
+                                    cursor: pointer;
+                                    margin: 0;
+                                }
+                            }
+
+                            .espacioDeItems2{
+                                border-radius: 5px;
+                                gap: 418%;
+                                display: flex;
+                                padding: 15% 437% 15% 15%;
+                                background-color: #F8F9FF;
+                                color: #2C3673;
+
+                                h2{
+                                    cursor: pointer;
+                                    margin: 0;
+                                }
+                            }
+
+                            .espacioDeItems3{
+                                border-radius: 5px;
+                                gap: 330%;
+                                display: flex;
+                                padding: 15% 345% 15% 15%;
+                                background-color: #F8F9FF;
+                                color: #2C3673;
+                                margin-bottom: 50%;
+
+                                h2{
+                                    cursor: pointer;
+                                    margin: 0;
+                                }
+                            }
+                        }
+
+                        .tituloNoResponsive{
+                            display: none;
+                        }
+
+                        .moRe:checked ~ .datosFooter {
+                            height: auto;
+                            overflow: visible;
+                        }
+
+                        .datosFooter{
+                            margin: 0 10%;
+                            width: 100%;
+                            height: 0;
+                            overflow: hidden;
+                            transition: height 0.3s ease;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
