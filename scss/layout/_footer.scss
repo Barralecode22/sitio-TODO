@@ -50,8 +50,8 @@ footer {
         margin-bottom: 2.5rem;
 
         .grid {
+            margin: 0 15%;
             gap: 5%;
-            margin: auto;
             width: 75%;
             display: grid;
             grid-template-columns: repeat(4,1fr);

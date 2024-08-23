@@ -51,8 +51,8 @@ footer .margenFooter {
   margin-bottom: 2.5rem;
 }
 footer .margenFooter .grid {
+  margin: 0 15%;
   gap: 5%;
-  margin: auto;
   width: 75%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -106,6 +106,7 @@ footer .derechosReservados .footerFin {
   padding: 10px 20px;
 }
 .navBar div img {
+  display: block;
   margin: 0 20px;
   height: 40px;
 }
@@ -154,6 +155,9 @@ nav label {
   cursor: pointer;
 }
 nav #toggle {
+  display: none;
+}
+nav img {
   display: none;
 }
 nav ul {
@@ -321,12 +325,12 @@ section .buttonDeAbajo .buttonVerMas:hover {
   background-color: #f3a548;
 }
 
-section .container {
+section .conTainer {
   margin-top: 2%;
   display: flex;
   justify-content: center;
 }
-section .container .prodUctos {
+section .conTainer .prodUctos {
   border-radius: 0.3125rem;
   box-shadow: 0px 8px 30px 5px rgba(0, 0, 0, 0.1);
   padding: 1% 1%;
@@ -334,18 +338,18 @@ section .container .prodUctos {
   margin-left: 1%;
   margin-right: 1%;
 }
-section .container .prodUctos:hover {
+section .conTainer .prodUctos:hover {
   transform: scale(1.2);
 }
-section .container .prodUctos p {
+section .conTainer .prodUctos p {
   margin-bottom: 10%;
   font-size: 1rem;
 }
-section .container .prodUctos h2 {
+section .conTainer .prodUctos h2 {
   font-size: 0.875rem;
   margin-bottom: 5%;
 }
-section .container .prodUctos .buttonComprar {
+section .conTainer .prodUctos .buttonComprar {
   font-size: 1rem;
   margin-top: 2%;
   padding: 8% 20%;
@@ -355,7 +359,7 @@ section .container .prodUctos .buttonComprar {
   background-color: #2C3673;
   padding: 8% 30%;
 }
-section .container .prodUctos .buttonComprar:hover {
+section .conTainer .prodUctos .buttonComprar:hover {
   background-color: #f3a548;
 }
 
@@ -573,6 +577,7 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     margin-bottom: 1.5rem;
   }
   footer .margenFooter .grid {
+    margin: 0 0;
     width: 100%;
     display: block;
   }
@@ -642,7 +647,8 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   header nav .navBar .navLogo {
     margin: 0;
   }
-  header nav .navBar .navLogo img {
+  header nav .navBar .navLogo .logo {
+    display: block;
     width: 6.25rem;
   }
   header nav .navBar .botonesNav {
@@ -658,7 +664,8 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     display: inline-flex;
     color: #2C3673;
   }
-  header .segundoNav img {
+  header .segundoNav .icoNo {
+    display: flex;
     margin-bottom: 1%;
     margin-left: 5%;
     width: 3%;
@@ -725,23 +732,23 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     padding: 2px 200px;
   }
   /* PAGINA OFERTAS */
-  section .container {
+  section .conTainer {
     flex-direction: column;
     margin: 0 20%;
   }
-  section .container .prodUctos {
+  section .conTainer .prodUctos {
     margin-bottom: 5%;
     padding: 1%;
     text-align: center;
   }
-  section .container .prodUctos img {
+  section .conTainer .prodUctos img {
     margin-top: 5%;
   }
-  section .container .prodUctos p {
+  section .conTainer .prodUctos p {
     margin-bottom: 5%;
     padding: 0;
   }
-  section .container .prodUctos .buttonComprar {
+  section .conTainer .prodUctos .buttonComprar {
     padding: 5% 10%;
     margin-bottom: 5%;
   }
