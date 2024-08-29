@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* Paleta de colores */
+/* titulos de las secciones */
+/* activacion del nav */
+/* cards */
+/* Pagina carrito */
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 * {
   margin: 0;
@@ -8,6 +13,9 @@
 
 footer {
   margin-top: 5rem;
+  /* mail de footer */
+  /* cuerpo de footer con soporte */
+  /* Footer-derechos recervados */
 }
 footer .footerMail {
   text-align: center;
@@ -157,7 +165,16 @@ nav label {
 nav #toggle {
   display: none;
 }
-nav img {
+nav .iconoFavorito {
+  display: none;
+}
+nav .iconoCarrto {
+  display: none;
+}
+nav .iconoFavorito2 {
+  display: none;
+}
+nav .iconoCarrto2 {
   display: none;
 }
 nav ul {
@@ -180,7 +197,11 @@ nav ul li a {
 nav ul li a:hover {
   color: #f3a548;
 }
+nav ul .butonesDeLogin {
+  display: none;
+}
 
+/* sección carrusel-publicidad */
 .sliderBox, .sliderBox2 {
   margin-top: 0;
   width: 100%;
@@ -227,6 +248,7 @@ nav ul li a:hover {
   }
 }
 
+/* Sección card-ofertas del dia */
 section {
   margin-top: 0.3125rem;
 }
@@ -235,7 +257,10 @@ section h1 {
   margin-bottom: 3%;
   display: flex;
   justify-content: center;
+  font-size: 35px;
+  font-weight: 700;
   gap: 1.25rem;
+  color: #2C3673;
 }
 section .sección2 {
   margin-top: 1.25rem;
@@ -265,6 +290,7 @@ section .sección2 .card3 {
   background-color: #4D8A99;
 }
 
+/* Sección cards-novedades */
 .sliderBox2 {
   margin: 1% 3% 0 10%;
   width: 80%;
@@ -281,6 +307,7 @@ section .sección2 .card3 {
   margin: 0;
 }
 
+/* Sección de cards-categorias */
 section .paginaCategoria {
   display: flex;
   justify-content: center;
@@ -301,6 +328,9 @@ section .paginaCategoria .cardCategorias div .precioCard {
 section .paginaCategoria .cardCategorias div .buttonDeAbajo {
   text-align: center;
 }
+section .paginaCategoria .cardCategorias div .buttonDeAbajo:hover {
+  background-color: #f3a548;
+}
 section .paginaCategoria .cardCategorias div .buttonAgregar {
   font-size: 1rem;
   margin-top: 2%;
@@ -309,6 +339,9 @@ section .paginaCategoria .cardCategorias div .buttonAgregar {
   border-radius: 5px;
   color: white;
   background-color: #2C3673;
+}
+section .paginaCategoria .cardCategorias div .buttonAgregar:hover {
+  background-color: #f3a548;
 }
 section .buttonDeAbajo {
   text-align: center;
@@ -325,6 +358,7 @@ section .buttonDeAbajo .buttonVerMas:hover {
   background-color: #f3a548;
 }
 
+/* Sección cards-ofertas */
 section .conTainer {
   margin-top: 2%;
   display: flex;
@@ -363,6 +397,7 @@ section .conTainer .prodUctos .buttonComprar:hover {
   background-color: #f3a548;
 }
 
+/* Sección de card-favoritos */
 section {
   margin-top: 3%;
 }
@@ -399,12 +434,17 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   background-color: #2C3673;
   padding: 15% 30%;
 }
+section .CardProducto .cardFavoritos div .buttonDeAgregar:hover {
+  background-color: #f3a548;
+}
 
+/* Sección primer compra */
 .seccionCarrito {
   gap: 1.25rem;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12);
+  /* Sección segunda compra */
 }
 .seccionCarrito .imporTante {
   grid-column: 2/3;
@@ -447,9 +487,16 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   border: none;
   font-size: 16px;
 }
+.seccionCarrito .CardProductoGrid .cardCarrito div .buttonDeComprar:hover {
+  background-color: #F8F9FF;
+  color: #2C3673;
+}
 .seccionCarrito .cardProductoSeleeccionado {
   grid-column: 9/12;
   grid-row: 3/6;
+}
+.seccionCarrito .cardProductoSeleeccionado h2 {
+  display: none;
 }
 .seccionCarrito .cardProductoSeleeccionado .cardCompra {
   padding: 10%;
@@ -482,6 +529,9 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   color: white;
   padding: 5% 15%;
   font-size: 16px;
+}
+.seccionCarrito .cardProductoSeleeccionado .cardCompra div .buttonTerminar:hover {
+  background-color: #f3a548;
 }
 .seccionCarrito .CardProductoGrid2 {
   grid-row: 4/5;
@@ -516,6 +566,9 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   border-radius: 5%;
   border: none;
 }
+.seccionCarrito .CardProductoGrid2 .cardCarrito2 div .buttonDeComprar2:hover {
+  background-color: #f3a548;
+}
 
 .secciónnovedades .card, .secciónnovedades section .sección2 .card1, section .sección2 .secciónnovedades .card1, .secciónnovedades section .sección2 .card2, section .sección2 .secciónnovedades .card2, .secciónnovedades section .sección2 .card3, section .sección2 .secciónnovedades .card3 {
   position: relative;
@@ -544,13 +597,164 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   opacity: 0.8;
 }
 
+@media (max-width: 768px) {
+  .secciónnovedades .card .card-img-overlay .card-title, .secciónnovedades section .sección2 .card1 .card-img-overlay .card-title, section .sección2 .secciónnovedades .card1 .card-img-overlay .card-title, .secciónnovedades section .sección2 .card2 .card-img-overlay .card-title, section .sección2 .secciónnovedades .card2 .card-img-overlay .card-title, .secciónnovedades section .sección2 .card3 .card-img-overlay .card-title, section .sección2 .secciónnovedades .card3 .card-img-overlay .card-title {
+    font-size: 14px;
+  }
+  .secciónnovedades .card .card-img-overlay .card-text, .secciónnovedades section .sección2 .card1 .card-img-overlay .card-text, section .sección2 .secciónnovedades .card1 .card-img-overlay .card-text, .secciónnovedades section .sección2 .card2 .card-img-overlay .card-text, section .sección2 .secciónnovedades .card2 .card-img-overlay .card-text, .secciónnovedades section .sección2 .card3 .card-img-overlay .card-text, section .sección2 .secciónnovedades .card3 .card-img-overlay .card-text {
+    font-size: 12px;
+  }
+  .secciónnovedades .card .card-img-overlay small, .secciónnovedades section .sección2 .card1 .card-img-overlay small, section .sección2 .secciónnovedades .card1 .card-img-overlay small, .secciónnovedades section .sección2 .card2 .card-img-overlay small, section .sección2 .secciónnovedades .card2 .card-img-overlay small, .secciónnovedades section .sección2 .card3 .card-img-overlay small, section .sección2 .secciónnovedades .card3 .card-img-overlay small {
+    font-size: 12px;
+  }
+}
 @media (max-width: 450px) {
+  /* header */
+  header nav .navBar .botonesNav {
+    display: none;
+  }
+  header .segundoNav .menu .butonesDeLogin {
+    margin-left: 26%;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    gap: 0.625rem;
+    display: flex;
+  }
+  header .segundoNav .menu .butonesDeLogin button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #2C3673;
+    color: white;
+  }
   /* main responsive (450px) */
   .margEn .paginaCategoria {
     margin: 0;
   }
   .margEn .paginaCategoria .cardCategorias {
     flex-direction: column;
+  }
+  /* PAGINA FAVORITOS */
+  section .CardProducto .cardFavoritos {
+    gap: 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .CardProducto .cardFavoritos .imgProducto {
+    width: 50%;
+    margin-bottom: 0;
+  }
+  section .CardProducto .cardFavoritos div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  section .CardProducto .cardFavoritos div .tituloProducto {
+    margin-bottom: 5%;
+  }
+  section .CardProducto .cardFavoritos div p {
+    margin-bottom: 10%;
+  }
+  section .CardProducto .cardFavoritos div .precioDeProducto {
+    margin-bottom: 10%;
+  }
+  section .CardProducto .cardFavoritos div .buttonDeAgregar {
+    padding: 20% 130%;
+    margin-bottom: 20%;
+  }
+  /* PAGINA CARRITO */
+  .seccionCarrito .imporTante {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .seccionCarrito .tituloImportante {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    font-size: 14px;
+  }
+  .seccionCarrito .CardProductoGrid {
+    grid-column: 2/12;
+    grid-row: 3/4;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito {
+    gap: 0;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito img {
+    width: 25%;
+    height: 25%;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito div .tituloProducto {
+    font-size: 10px;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito div p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito div .precioDeProducto {
+    margin-top: 13%;
+    margin-left: 50%;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito div .buttonDeComprar {
+    padding: 10% 20%;
+  }
+  .seccionCarrito .cardProductoSeleeccionado {
+    padding: 5%;
+    grid-column: 2/12;
+    grid-row: 5/6;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra {
+    gap: 2%;
+    display: flex;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra .imgProductoSeleccionado {
+    width: 50%;
+    height: 50%;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div .tituloProductoCarrito {
+    margin-top: 0;
+    font-size: 10px;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div .datosProductoCarrito {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div .precioProductoCarrito {
+    margin-top: 13%;
+    margin-left: 0;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div .buttonTerminar {
+    padding: 10% 30%;
+  }
+  .seccionCarrito .CardProductoGrid2 {
+    grid-column: 2/12;
+    grid-row: 4/5;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 {
+    gap: 0;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 img {
+    width: 25%;
+    height: 25%;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 div .tituloProducto {
+    font-size: 10px;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 div p {
+    font-size: 8px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 div .precioDeProducto {
+    margin-top: 13%;
+    margin-left: 50%;
+    font-size: 10px;
+    margin-bottom: 0;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 div .buttonDeComprar2 {
+    padding: 10% 20%;
   }
   /* footer responsive (450px) */
   footer .footerMail .barraDeMail {
@@ -573,6 +777,7 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     font-size: 0.875rem;
   }
   footer .margenFooter {
+    margin-left: 60px;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
@@ -588,8 +793,6 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     margin: 1% 0%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
-    background-color: #F8F9FF;
     border-radius: 5px;
     color: #2C3673;
   }
@@ -629,15 +832,18 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
   footer .derechosReservados {
     margin-top: 2rem;
     padding: 1rem;
-    font-size: 0.875rem;
   }
   footer .derechosReservados .footerFin {
+    font-size: 14px;
     margin: 0.5rem 0;
   }
 }
 @media (max-width: 768px) {
   /* responsive header (768px) */
   header {
+    /* ICONOS PARA FAVORITOS Y CARRITO */
+    /* Solo para el index */
+    /* Para las demas paginas */
     /* responsive segundo nav (768px) */
   }
   header nav .navBar {
@@ -651,8 +857,27 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     display: block;
     width: 6.25rem;
   }
-  header nav .navBar .botonesNav {
-    display: none;
+  header .iconoFavorito {
+    display: inline;
+    margin-left: 3%;
+    margin-bottom: 2%;
+    width: 24px;
+  }
+  header .iconoCarrto {
+    display: inline;
+    margin-left: 2%;
+    margin-bottom: 2%;
+    width: 24px;
+  }
+  header .iconoFavorito2 {
+    display: inline;
+    margin-left: 3%;
+    width: 24px;
+  }
+  header .iconoCarrto2 {
+    display: inline;
+    margin-left: 2%;
+    width: 24px;
   }
   header .segundoNav #toggle:checked ~ .menu {
     height: auto;
@@ -697,6 +922,15 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     margin: 3% 5% 0 5%;
   }
   /*novedades hecho con boostrap*/
+  .card .card-img-overlay .card-title, section .sección2 .card1 .card-img-overlay .card-title, section .sección2 .card2 .card-img-overlay .card-title, section .sección2 .card3 .card-img-overlay .card-title {
+    font-size: 5px;
+  }
+  .card .card-img-overlay .card-text, section .sección2 .card1 .card-img-overlay .card-text, section .sección2 .card2 .card-img-overlay .card-text, section .sección2 .card3 .card-img-overlay .card-text {
+    font-size: 5px;
+  }
+  .card .card-img-overlay small, section .sección2 .card1 .card-img-overlay small, section .sección2 .card2 .card-img-overlay small, section .sección2 .card3 .card-img-overlay small {
+    font-size: 5PX;
+  }
   /* PAGINA CATEGORIAS */
   .margEn {
     margin-top: 5%;
@@ -753,7 +987,60 @@ section .CardProducto .cardFavoritos div .buttonDeAgregar {
     margin-bottom: 5%;
   }
   /* PAGINA FAVORITOS */
+  section .CardProducto .cardFavoritos {
+    margin: 0 10%;
+  }
+  section .CardProducto .cardFavoritos div .tituloProducto {
+    font-size: 14px;
+  }
   /* PAGINA CARRITO */
+  .seccionCarrito .imporTante {
+    grid-column: 2/4;
+    grid-row: 1/2;
+  }
+  .seccionCarrito .tituloImportante {
+    grid-column: 2/12;
+    grid-row: 2/3;
+    font-size: 14px;
+  }
+  .seccionCarrito .CardProductoGrid {
+    grid-column: 2/12;
+    grid-row: 3/4;
+  }
+  .seccionCarrito .CardProductoGrid .cardCarrito {
+    gap: 0;
+  }
+  .seccionCarrito .cardProductoSeleeccionado {
+    padding: 5%;
+    grid-column: 2/12;
+    grid-row: 5/6;
+  }
+  .seccionCarrito .cardProductoSeleeccionado h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 5%;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra {
+    gap: 5%;
+    display: flex;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra img {
+    width: 10px;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div h2 {
+    text-align: left;
+  }
+  .seccionCarrito .cardProductoSeleeccionado .cardCompra div .buttonTerminar {
+    padding: 10% 30%;
+  }
+  .seccionCarrito .CardProductoGrid2 {
+    grid-column: 2/12;
+    grid-row: 4/5;
+  }
+  .seccionCarrito .CardProductoGrid2 .cardCarrito2 {
+    gap: 0;
+  }
+  /* Footer */
   footer div .footerMail .barraDeMail {
     flex-direction: column;
     align-items: stretch;

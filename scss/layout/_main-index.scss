@@ -1,3 +1,5 @@
+/* sección carrusel-publicidad */
+
 .sliderBox {
     margin-top: 0;
     width: 100%;
@@ -34,6 +36,8 @@
         100% {margin-left: -300%;}
     }
 }
+
+/* Sección card-ofertas del dia */
 
 section {
     margin-top: .3125rem;
@@ -78,6 +82,8 @@ section {
             }
         }
 }
+
+/* Sección cards-novedades */
 
 .sliderBox2 {
     margin: 1% 3% 0 10%;

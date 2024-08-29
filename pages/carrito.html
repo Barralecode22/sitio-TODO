@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content=TODO>
+    <meta property="og:site_name" content=TODO>
+    <meta property="og:url" content=https://barralecode22.github.io/sitio-TODO/>
+    <meta property="og:description" content=Compra de productos online (Ropa, Comida, Tecnología, Muebles.>
+    <meta property="og:type" content=product>
+    <meta property="og:image" content=https://barralecode22.github.io/sitio-TODO/assets/secci%C3%B3n%20de%20inicio.png>
+    <meta name="robots" content="robot, follow">
     <title>TODO</title>
     <link rel="icon" href="../assets/icono del logo.svg">
     <link rel="stylesheet" href="../css/style.css">
@@ -19,7 +26,7 @@
                     <input placeholder="Buscar...">
                 </div>
                 <div class="botonesNav">
-                    <button class="buttonIN">Login</button>
+                    <button class="buttonIN">Entrar</button>
                     <button class="buttonRE">Registrarse</button>
                 </div>
             </div>
@@ -27,6 +34,8 @@
         <nav class="segundoNav">
             <input type="checkbox" id="toggle">
             <label for="toggle"><i class="material-icons">menu</i></label>
+            <a href="../pages/favoritos.html"><img class="iconoFavorito2" src="../assets/img-favoritos.png"></a>
+            <a href="#"><img class="iconoCarrto2" src="../assets/img-carrito-de-compras.png"></a>
             <div class="menu">
                 <ul>
                     <li><a href="../index.html">inicio</a></li>
@@ -38,6 +47,11 @@
                     <li class="favoRitos"><a href="../pages/favoritos.html">Favoritos</a></li>
                         
                     <li class="carriTo"><a href="#" class="acTive">Carrito</a></li>
+
+                    <div class="butonesDeLogin">
+                        <button>Entrar</button>
+                        <button>Registrarse</button>
+                    </div>
                 </ul>
             </div>
         </nav>
@@ -46,42 +60,43 @@
     <!-- Sección del producto seleccionado para comprar -->
 
     <section class="seccionCarrito">
-            <h1 class="imporTante">Importante</h1>
+            <h2 class="imporTante">Importante</h1>
             <p class="tituloImportante">Pasando los 7 dias, el producto es eliminiado automanticamente del carrito</p>
         <article class="CardProductoGrid">
             <div class="cardCarrito">
                 <img src="../assets/img-suavizante.png" alt="">
                 <div>
-                    <h2 class="tituloProducto">CERVEZA SCHNEIDER X 473 ML.</h2>
+                    <h2 class="tituloProducto">Suavizante Para Ropa Héroe <br>Frescura Matinal Doy Pack x 900</h2>
                     <p>Agregado el 02/09/2024</p>
                 </div>
                 <div>
-                    <h2 class="precioDeProducto">$934,70</h2>
+                    <h2 class="precioDeProducto">$1.839,00</h2>
                     <button class="buttonDeComprar">Comprar</button>
                 </div>
             </div>
         </article>
         <article class="cardProductoSeleeccionado">
+            <h2>Producto seccionado</h2>
             <div class="cardCompra">
                 <img class="imgProductoSeleccionado" src="../assets/img-suavizante.png" alt="">
                 <div>
-                    <h2 class="tituloProductoCarrito">CERVEZA SCHNEIDER X 473 ML.</h2>
+                    <h3 class="tituloProductoCarrito">Suavizante Para Ropa Héroe Frescura Matinal Doy Pack x 900</h2>
                     <p class="datosProductoCarrito">Agregado el 02/09/2024</p>
-                    <p class="datosProductoCarrito">Descontado $2.500.30</p>
-                    <h2 class="precioProductoCarrito">$934,70</h2>
+                    <p class="datosProductoCarrito">Descontado $300</p>
+                    <h2 class="precioProductoCarrito">$1.539,00</h2>
                     <button class="buttonTerminar">Comprar</button>
                 </div>
             </div>
         </article>
         <article class="CardProductoGrid2">
             <div class="cardCarrito2">
-                <img src="../assets/img-suavizante.png" alt="">
+                <img src="../assets/img-joystick.png" alt="">
                 <div>
-                    <h2 class="tituloProducto">CERVEZA SCHNEIDER X 473 ML.</h2>
-                    <p>Agregado el 02/09/2024</p>
+                    <h2 class="tituloProducto">JUGUETE JUEGO AGUA JOYSTICK</h2>
+                    <p>Agregado el 05/09/2024</p>
                 </div>
                 <div>
-                    <h2 class="precioDeProducto">$934,70</h2>
+                    <h2 class="precioDeProducto">$5.999,25</h2>
                     <button class="buttonDeComprar2">Comprar</button>
                 </div>
             </div>
@@ -151,7 +166,7 @@
                 <div class="footerDesplegable">
                     <input id="toggle3" class="moRe" type="checkbox">
                     <label for="toggle3">
-                        <div class="espacioDeItems">
+                        <div class="espacioDeItems2">
                             <h2>Online</h2>
                             <h2>+</h2>
                         </div>
@@ -170,7 +185,7 @@
                     <input id="toggle4" class="moRe" type="checkbox">
                     <label for="toggle4">
                         
-                        <div class="espacioDeItems">
+                        <div class="espacioDeItems3">
                             <h2>Soporte</h2>
                             <h2>+</h2>
                         </div>

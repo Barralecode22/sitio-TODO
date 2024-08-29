@@ -1,3 +1,5 @@
+/* Sección de cards-categorias */
+
 section{
     div{
 
@@ -29,10 +31,18 @@ section{
 
                 .buttonDeAbajo{
                     text-align: center;
+
+                    &:hover{
+                        background-color: map-get($colores,color1)
+                    }
                 }
                 
                 .buttonAgregar{
                     @include boton;
+
+                    &:hover{
+                        background-color: map-get($colores,color1)
+                    }
                 }
             }
         }

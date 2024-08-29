@@ -31,3 +31,21 @@
         }
     }
 }
+
+@media (max-width:768px){
+    .secciónnovedades{
+        .card{
+            .card-img-overlay{
+                .card-title{
+                    font-size: 14px;
+                }
+                .card-text{
+                    font-size: 12px;
+                }
+                small{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}

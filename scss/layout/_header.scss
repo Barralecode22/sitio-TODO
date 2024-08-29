@@ -68,7 +68,19 @@ nav {
         display: none;
     }
 
-    img{
+    .iconoFavorito{
+        display: none;
+    }
+
+    .iconoCarrto{
+        display: none;
+    }
+
+    .iconoFavorito2{
+        display: none;
+    }
+
+    .iconoCarrto2{
         display: none;
     }
 
@@ -93,6 +105,10 @@ nav {
                     color:map-get($colores,color1);
                 }
             }
+        }
+
+        .butonesDeLogin{
+            display: none;
         }
     }
 }
